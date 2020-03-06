@@ -1,0 +1,67 @@
+/*-----------------------
+Author: Christopher Bell
+Company: Hex Studios
+Last version: 03/05/2020
+-----------------------*/
+html {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+/*-----------------------*/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	color: white;
+	font-family: monospace;;
+}
+/*-----------------------*/
+header {
+	width: 100vw;
+	height: 50px;
+	background-color: white;
+	color: black;
+} header b {
+	font-size: 18pt;
+}
+
+
+
+.navbttn, .navbttn_r {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 20px 5px 20px;
+	/*margin: 0 5px 0 5px;*/
+	float: left;
+	background-color: transparent;
+	height: 40px;
+	font-size: 12pt;
+	color: black;
+	text-decoration: none;
+	transition: background-color 0.3s, color 0.3s;
+} .navbttn:hover, .navbttn_r:hover {
+	background-color: rgba(0,0,0,0.6);
+	color: white;
+} .navbttn:active, .navbttn_r:active {
+	border: 1px solid black;
+}
+
+.navbttn_r {
+	float:right;
+}
+
+#mobile_bars {
+	display: none;
+}
+/*-----------------------*/
+@media only screen and (max-width: 600px) {
+	.navbttn, .navbttn_r {
+		float: none;
+		background-color: white;
+		border-bottom: 1px solid black;
+	}
+
+
+}
